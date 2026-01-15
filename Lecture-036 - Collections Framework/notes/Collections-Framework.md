@@ -10,6 +10,8 @@ we require --->
 1. a method to take input from device to calculator application
 2. for processing we need some functions like add(), subtract(), etc
 3. again for logging the output of calculator application to the device we
+
+
 need some output writing methods like log(), display(), etc.
 
 So, everytime, you want to create a calculator application, 
