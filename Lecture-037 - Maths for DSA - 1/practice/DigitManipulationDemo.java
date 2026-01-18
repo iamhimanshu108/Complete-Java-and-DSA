@@ -43,6 +43,18 @@ public class DigitManipulationDemo {
         int res = digit * (int)Math.pow(10, digits)+ num;
         System.out.println("New Number is: " + res);
     }
+
+    public void reverse(int num){
+        int res =0;
+        while (num >0){
+            int d = num %10;
+            res = res *10+d;
+            num = num/10;
+        }
+        System.out.println("reverse "+ res);
+    }
+
+
     public static void main(String[] args) {
         DigitManipulationDemo dm = new DigitManipulationDemo();
         //dm.findDigitsUsingFormula(-6417);
@@ -50,7 +62,8 @@ public class DigitManipulationDemo {
         //dm.findDigitsUsingDivision(8714);
 
         // dm.appendDigit(765, 1);
-        dm.insertfront(10, 5);
+        //dm.insertfront(10, 5);
+        dm.reverse(123);
       }
 }
 
